@@ -57,7 +57,7 @@ extern const u8 gText_Medicine[];
 extern const u8 gText_BattleItems[];
 extern const u8 gText_Treasures[];
 extern const u8 gText_Megastones[];
-extern const u8 gText_Z_Crystals[];
+extern const u8 gText_ZCrystals[];
 
 extern const u8 gText_Single2[];
 extern const u8 gText_Double2[];

@@ -26,7 +26,7 @@ EventScript_BufferPocketNameAndTryFanfare::
 	case POCKET_TREASURES,    EventScript_BufferTreasuresPocket
 	case POCKET_TM_HM,        EventScript_BufferTMHMsPocket
 	case POCKET_MEGASTONES,   EventScript_BufferMegastonesPocket
-	case POCKET_Z_CRYSTALS,   EventScript_BufferZ-CrystalsPocket
+	case POCKET_Z_CRYSTALS,   EventScript_BufferZCrystalsPocket
 	case POCKET_KEY_ITEMS,    EventScript_BufferKeyItemsPocket
 	end
 
@@ -75,8 +75,8 @@ EventScript_BufferTreasuresPocket::
 	call_if_eq VAR_0x8007, TRUE, EventScript_PlayFanfareObtainedItem
 	return
 
-	EventScript_BufferZ-CrystalsPocket::
-	bufferstdstring STR_VAR_3, STDSTRING_Z_CRYSTALS
+	EventScript_BufferZCrystalsPocket::
+	bufferstdstring STR_VAR_3, STDSTRING_ZCRYSTALS
 	call_if_eq VAR_0x8007, TRUE, EventScript_PlayFanfareObtainedItem
 	return
 

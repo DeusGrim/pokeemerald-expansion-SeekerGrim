@@ -128,6 +128,7 @@ static const union AnimCmd *const sBagSpriteAnimTable[] =
     [POCKET_MEDICINE] = sSpriteAnim_Bag_Medicine,
     [POCKET_POKE_BALLS] = sSpriteAnim_Bag_Pokeballs,
     [POCKET_BATTLE_ITEMS] = sSpriteAnim_Bag_BattleItems,
+    [POCKET_BERRIES] = sSpriteAnim_Bag_Berries,
     [POCKET_TREASURES]  = sSpriteAnim_Bag_Treasures,
     [POCKET_TM_HM]      = sSpriteAnim_Bag_TMsHMs,
     [POCKET_MEGASTONES]      = sSpriteAnim_Bag_Megastones,

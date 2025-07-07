@@ -168,7 +168,7 @@
 #define STDSTRING_MEDICINE         30
 #define STDSTRING_BATTLEITEMS      31
 #define STDSTRING_TREASURES        32
-#define STDSTRING_Z_CRYSTALS       33
+#define STDSTRING_ZCRYSTALS        33
 #define STDSTRING_MEGASTONES       34
 
 // Dynamic Multichoice Callbacks
