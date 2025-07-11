@@ -1,3 +1,30 @@
+# About this branch
+This branch adds 5 new pockets to the bag based on changes to it from later generations and 2 extra gimmick pockets
+This Branch was made as an updated and proposed commit for the expansion based on AsparagusEduardo's Bag Pocket Branch :
+* Medicine (HP, PP and status recovery items)
+* Power-Up (Vitamins and evolution items)
+* Battle Items (X items, Pokédoll/FluffyTail and hold items with battle effects)
+* MegaStone (made to alleviate the space needed for all the megastones to fit in one game)
+* Z-Crystals (same as the megastone pocket but specifically for Z-Crystals)
+
+The new order for the pockets is the following:
+* Items
+* Medicine
+* Poké Balls
+* Battle Items
+* Berries
+* Power-Up
+* TMs & HMs
+* Mega Stones
+* Z-Crystals
+* Key Items
+
+However, it reuses the original pocket sprites until I'm able to get new ones for the new pockets.(solved)
+
+* Used DPPT Bags and Changed to match Emerald Bag Colors
+
+To-Do:
+* New bag sprites.(finished) 
 # About `pokeemerald-expansion`
 
 ![Gif that shows debugging functionality that is unique to pokeemerald-expansion such as rerolling Trainer Id, Cheat Start, PC from Debug Menu, Debug PC Fill, Pokemon Sprite Visualizer, Debug Warp to Map, and Battle Debug Menu](https://github.com/user-attachments/assets/cf9dfbee-4c6b-4bca-8e0a-07f116ef891c) ![Gif that shows overworld functionality that is unique to pokeemerald-expansion such as indoor running, BW2 style map popups, overworld followers, DNA Splicers, Gen 1 style fishing, OW Item descriptions, Quick Run from Battle, Use Last Ball, Wild Double Battles, and Catch from EXP](https://github.com/user-attachments/assets/383af243-0904-4d41-bced-721492fbc48e) ![Gif that shows off a number of modern Pokemon battle mechanics happening in the pokeemerald-expansion engine: 2 vs 1 battles, modern Pokemon, items, moves, abilities, fully customizable opponents and partners, Trainer Slides, and generational gimmicks](https://github.com/user-attachments/assets/50c576bc-415e-4d66-a38f-ad712f3316be)
