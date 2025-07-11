@@ -56,23 +56,23 @@
 #define UNION_ROOM_PARTY_SIZE       2
 
 // capacities of various saveblock objects
-#define DAYCARE_MON_COUNT 2
+#define DAYCARE_MON_COUNT 4
 #define POKEBLOCKS_COUNT 40
 #define OBJECT_EVENTS_COUNT 16
 #define MAIL_COUNT (10 + PARTY_SIZE)
-#define SECRET_BASES_COUNT 15
+#define SECRET_BASES_COUNT 1
 #define POKE_NEWS_COUNT 16
 #define PC_ITEMS_COUNT 50
-#define BAG_ITEMS_COUNT 40
-#define BAG_KEYITEMS_COUNT 30
-#define BAG_POKEBALLS_COUNT 16
-#define BAG_TMHM_COUNT 64
-#define BAG_BERRIES_COUNT 46
-#define BAG_MEDICINE_COUNT 34
+#define BAG_ITEMS_COUNT 50
+#define BAG_KEYITEMS_COUNT 40
+#define BAG_POKEBALLS_COUNT 18
+#define BAG_TMHM_COUNT 70
+#define BAG_BERRIES_COUNT 50
+#define BAG_MEDICINE_COUNT 42
 #define BAG_BATTLEITEMS_COUNT 47
-#define BAG_TREASURES_COUNT 18
-#define BAG_MEGASTONE_COUNT 46
-#define BAG_Z_CRYSTAL_COUNT 34
+#define BAG_TREASURES_COUNT 32
+#define BAG_MEGASTONE_COUNT 49
+#define BAG_Z_CRYSTAL_COUNT 35
 #define OBJECT_EVENT_TEMPLATES_COUNT 64
 #define DECOR_MAX_SECRET_BASE 16
 #define DECOR_MAX_PLAYERS_HOUSE 12
@@ -91,7 +91,7 @@
 // Excludes link modes. See RANKING_HALL_* in include/constants/battle_frontier.h
 #define HALL_FACILITIES_COUNT 9
 // Received via record mixing, 1 for each player other than yourself
-#define HALL_RECORDS_COUNT 3
+#define HALL_RECORDS_COUNT 0
 
 // Battle Frontier level modes.
 #define FRONTIER_LVL_50         0
