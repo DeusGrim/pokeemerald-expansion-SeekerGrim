@@ -231,7 +231,7 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
+Chewtle
 Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -5949,8 +5949,12 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
-Level: 5
+Poochyena (M)
+Level: 5   
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Rockruff (M)
+level 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BILLY ===
@@ -5970,6 +5974,10 @@ Seedot
 Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+Lotad
+Level: 6
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_JOSH ===
 Name: JOSH
 Class: Youngster
@@ -5984,6 +5992,10 @@ Level: 10
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Tackle
 
+Rolycoly
+Level: 10
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
 === TRAINER_TOMMY ===
 Name: TOMMY
 Class: Youngster
@@ -5997,7 +6009,7 @@ Geodude
 Level: 8
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
-Geodude
+Nacli
 Level: 8
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
@@ -6007,11 +6019,15 @@ Class: Youngster
 Pic: Youngster
 Gender: Male
 Music: Male
-Double Battle: No
+Double Battle: Yes
 AI: Check Bad Move
 
 Machop
 Level: 9
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Scraggy
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BEN ===
@@ -6223,6 +6239,10 @@ Taillow
 Level: 3
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+Patrat
+Level: 4
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_TIMMY ===
 Name: TIMMY
 Class: Youngster
@@ -6333,12 +6353,12 @@ Magikarp
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Magikarp
+Buizel
 Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Magikarp
-Level: 7
+Basculin-White-Striped 
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CLAUDE ===
@@ -6350,7 +6370,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Magikarp
+Skrelp
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6379,7 +6399,7 @@ Tentacool
 Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Magikarp
+Wishiwashi
 Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6391,6 +6411,10 @@ Gender: Male
 Music: Hiker
 Double Battle: No
 AI: Check Bad Move
+
+Arrokuda
+Level: 12
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 Tentacool
 Level: 11
@@ -6409,15 +6433,18 @@ Tentacool
 Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Wailmer
+Finizen
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Tentacool
+Shellos
 Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Liquidation
+- Harden
+- Recover
 
-Wailmer
+Krabby
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6430,6 +6457,10 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
+Tympole
+Level: 20
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 Barboach
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
@@ -6440,7 +6471,7 @@ Class: Fisherman
 Pic: Fisherman
 Gender: Male
 Music: Hiker
-Double Battle: No
+Double Battle: Yes
 AI: Check Bad Move
 
 Tentacool
@@ -6459,6 +6490,10 @@ Gender: Male
 Music: Hiker
 Double Battle: No
 AI: Check Bad Move
+
+Clauncher
+Level: 16
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Tentacool
 Level: 16
@@ -6498,7 +6533,7 @@ Gyarados
 Level: 27
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Gyarados
+Wishiwashi
 Level: 27
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -6523,7 +6558,7 @@ Tentacool
 Level: 26
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Gyarados
+Wishiwashi
 Level: 29
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -6548,7 +6583,7 @@ Tentacruel
 Level: 30
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Gyarados
+Wishiwashi
 Level: 31
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -6569,7 +6604,7 @@ Sharpedo
 Level: 33
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Gyarados
+Wishiwashi
 Level: 33
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -11061,6 +11096,10 @@ Shroomish
 Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+Wurmple
+Level: 3
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_HALEY_1 ===
 Name: HALEY
 Class: Lass
@@ -11261,7 +11300,7 @@ Wurmple
 Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Wurmple
+Blipbug
 Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11278,15 +11317,15 @@ Wurmple
 Level: 3
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Wurmple
+Nymble
 Level: 3
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Wurmple
+Blipbug
 Level: 3
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Wurmple
+Caterpie
 Level: 3
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11367,7 +11406,7 @@ Nincada
 Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Nincada
+Paras
 Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11379,6 +11418,10 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move
+
+Parasect
+Level:28 
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 Ninjask
 Level: 27
@@ -11392,6 +11435,10 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move
+
+Parasect
+Level:29 
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 Dustox
 Level: 29
@@ -11422,6 +11469,10 @@ Ninjask
 Level: 31
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
+Parasect
+Level:31
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+
 === TRAINER_JAMES_5 ===
 Name: JAMES
 Class: Bug Catcher
@@ -11430,6 +11481,10 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move
+
+Parasect
+Level:33 
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 Surskit
 Level: 33
@@ -11443,7 +11498,7 @@ Dustox
 Level: 33
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Ninjask
+Vikavolt
 Level: 33
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -11464,6 +11519,11 @@ Machop
 Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+Tauros-Paldea-Blaze (M)
+Level: 17
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
 === TRAINER_TRENT_1 ===
 Name: TRENT
 Class: Hiker
@@ -11473,7 +11533,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
+Arcanine-Hisui  
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11481,7 +11541,7 @@ Geodude
 Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Geodude
+Roggenrola
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11493,6 +11553,10 @@ Gender: Male
 Music: Hiker
 Double Battle: No
 AI: Check Bad Move
+
+Klawf
+Level:18
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Geodude
 Level: 18

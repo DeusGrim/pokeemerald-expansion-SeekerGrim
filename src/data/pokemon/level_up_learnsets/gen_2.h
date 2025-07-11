@@ -3590,6 +3590,7 @@ static const struct LevelUpMove sMeganiumLevelUpLearnset[] = {
 
 #if P_FAMILY_CYNDAQUIL
 static const struct LevelUpMove sCyndaquilLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_HEX),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 6, MOVE_SMOKESCREEN),
@@ -3602,6 +3603,7 @@ static const struct LevelUpMove sCyndaquilLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sQuilavaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_HEX),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_SMOKESCREEN),
