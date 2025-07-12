@@ -1167,6 +1167,3 @@ static const u16 sRotomFormChangeMoves[5] =
     ROTOM_FAN_MOVE,
     ROTOM_MOW_MOVE,
 };
-const u16 sTMHMMoves[TMHM_COUNT] =
-{
-};
