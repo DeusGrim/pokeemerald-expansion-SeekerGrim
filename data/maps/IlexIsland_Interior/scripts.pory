@@ -1,0 +1,142 @@
+raw `
+IlexIsland_Interior_MapScripts::
+	map_script MAP_SCRIPT_ON_RESUME, IlexIsland_Interior_OnResume
+	map_script MAP_SCRIPT_ON_TRANSITION, IlexIsland_Interior_OnTransition
+	.byte 0
+
+IlexIsland_Interior_OnResume:
+	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, IlexIsland_Interior_EventScript_TryRemoveCelebi
+	end
+
+IlexIsland_Interior_EventScript_TryRemoveCelebi::
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn
+	removeobject LOCALID_ILEX_ISLAND_CELEBI
+	return
+
+IlexIsland_Interior_OnTransition:
+	call_if_eq VAR_ROAMER_POKEMON, 0, IlexIsland_Interior_EventScript_SetUpCelebi
+	call IlexIsland_Interior_EventScript_SetUpPlayerGfx
+	end
+
+IlexIsland_Interior_EventScript_SetUpCelebi::
+	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_SPECIES(CELEBI)
+	setvar VAR_TEMP_4, SPECIES_CELEBI
+	return
+
+IlexIsland_Interior_EventScript_SetUpPlayerGfx::
+	checkplayergender
+	goto_if_eq VAR_RESULT, MALE, IlexIsland_Interior_EventScript_SetBrendanGfx
+	goto_if_eq VAR_RESULT, FEMALE, IlexIsland_Interior_EventScript_SetMayGfx
+	end
+
+IlexIsland_Interior_EventScript_SetBrendanGfx::
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL
+	return
+
+IlexIsland_Interior_EventScript_SetMayGfx::
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_RIVAL_MAY_NORMAL
+	return
+
+IlexIsland_Interior_EventScript_TryCelebiEncounter::
+	lockall
+	setvar VAR_0x8008, 12  @ Player's Y coordinate. Not read
+	goto IlexIsland_Interior_EventScript_Celebi
+	end
+
+IlexIsland_Interior_EventScript_Celebi::
+	goto_if_set FLAG_TEMP_2, IlexIsland_Interior_EventScript_Sign
+	goto_if_set FLAG_DEFEATED_CELEBI, IlexIsland_Interior_EventScript_Sign
+	goto_if_set FLAG_CAUGHT_CELEBI, IlexIsland_Interior_EventScript_Sign
+	goto_if_unset FLAG_ENABLE_SHIP_ILEX_ISLAND, IlexIsland_Interior_EventScript_Sign
+	setflag FLAG_ENCOUNTERED_CELEBI
+	setflag FLAG_TEMP_2
+	special SpawnCameraObject
+	applymovement LOCALID_CAMERA, IlexIsland_Interior_Movement_CameraPanUp
+	waitmovement 0
+	delay 50
+	waitse
+	playmoncry VAR_TEMP_4, CRY_MODE_NORMAL
+	delay 30
+	waitmoncry
+	addobject LOCALID_ILEX_ISLAND_CELEBI
+	delay 30
+	applymovement LOCALID_CAMERA, IlexIsland_Interior_Movement_CameraPanDown
+	applymovement LOCALID_ILEX_ISLAND_CELEBI, IlexIsland_Interior_Movement_CelebiApproach
+	waitmovement 0
+	delay 50
+	special RemoveCameraObject
+	setvar VAR_LAST_TALKED, LOCALID_ILEX_ISLAND_CELEBI
+	call_if_eq VAR_ROAMER_POKEMON, 0, IlexIsland_Interior_EventScript_SetCelebiBattleVars
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartLatiBattle
+	waitstate
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, IlexIsland_Interior_EventScript_CelebiDefeated
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, IlexIsland_Interior_EventScript_RanFromCelebi
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, IlexIsland_Interior_EventScript_RanFromCelebi
+	setflag FLAG_CAUGHT_CELEBI
+	releaseall
+	end
+
+IlexIsland_Interior_EventScript_CelebiDefeated::
+	setflag FLAG_DEFEATED_CELEBI
+	copyvar VAR_0x8004, VAR_TEMP_4
+	goto Common_EventScript_LegendaryFlewAway
+	end
+
+IlexIsland_Interior_EventScript_RanFromCelebi::
+	copyvar VAR_0x8004, VAR_TEMP_4
+	goto Common_EventScript_LegendaryFlewAway
+	end
+
+IlexIsland_Interior_EventScript_Sign::
+	msgbox IlexIsland_Interior_Text_Sign, MSGBOX_DEFAULT
+	releaseall
+	end
+
+IlexIsland_Interior_EventScript_SetCelebiBattleVars::
+	seteventmon SPECIES_CELEBI, 50, ITEM_CHERISH_BALL
+	return
+
+IlexIsland_Interior_Movement_CameraPanUp:
+	walk_up
+	walk_up
+	walk_up
+	step_end
+
+IlexIsland_Interior_Movement_CameraPanDown:
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	delay_16
+	walk_down
+	walk_down
+	walk_down
+	walk_in_place_faster_up
+	step_end
+
+IlexIsland_Interior_Movement_CelebiApproach:
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	delay_16
+	delay_16
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+IlexIsland_Interior_Text_Sign:
+	.string "Time moves fast cherish every\n"
+	.string "experience.$"
+
+`
+

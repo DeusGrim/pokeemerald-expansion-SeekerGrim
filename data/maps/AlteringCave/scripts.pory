@@ -1,0 +1,33 @@
+raw `
+AlteringCave_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, AlteringCave_OnTransition
+	.byte 0
+
+AlteringCave_OnTransition:
+	setflag FLAG_LANDMARK_ALTERING_CAVE
+	call_if_set FLAG_SYS_GAME_CLEAR, AlteringCave_EventScript_OpenLegendaryCave
+	call_if_set FLAG_UNLOCKED_PARADOX_POKEMON, AlteringCave_EventScript_OpenParadoxCave
+	call_if_set FLAG_UNLOCKED_ULTRA_BEASTS, AlteringCave_EventScript_OpenUltraCave
+	end
+
+AlteringCave_EventScript_OpenUltraCave::
+	setmetatile 17, 1, METATILE_Cave_CaveEntrance_Top, TRUE
+	setmetatile 16, 2, METATILE_Cave_CaveEntrance_Left, TRUE
+	setmetatile 17, 2, METATILE_Cave_CaveEntrance_Bottom, FALSE
+	setmetatile 18, 2, METATILE_Cave_CaveEntrance_Right, TRUE
+	return
+
+AlteringCave_EventScript_OpenParadoxCave::
+	setmetatile 6, 2, METATILE_Cave_CaveEntrance_Top, TRUE
+	setmetatile 5, 3, METATILE_Cave_CaveEntrance_Left, TRUE
+	setmetatile 6, 3, METATILE_Cave_CaveEntrance_Bottom, FALSE
+	setmetatile 7, 3, METATILE_Cave_CaveEntrance_Right, TRUE
+	return
+
+AlteringCave_EventScript_OpenLegendaryCave::
+	setmetatile 26, 1, METATILE_Cave_CaveEntrance_Top, TRUE
+	setmetatile 25, 2, METATILE_Cave_CaveEntrance_Left, TRUE
+	setmetatile 26, 2, METATILE_Cave_CaveEntrance_Bottom, FALSE
+	setmetatile 27, 2, METATILE_Cave_CaveEntrance_Right, TRUE
+	return
+`
